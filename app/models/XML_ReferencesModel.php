@@ -1,10 +1,15 @@
 <?php
 
-
-
 /**
- * References model.
+ * Loads references from XML file
+ *
+ * @author     Michal Švec
+ * @copyright  Copyright (c) 2010 Michal Švec
+ * @license    New BSD License
+ * @link       http://michalsvec.cz/
+ * @version    0.1
  */
+
 class ReferencesModel extends Object
 {
 	/** @var string */
@@ -14,12 +19,12 @@ class ReferencesModel extends Object
 	private $xml;
 
 
+
 	public function __construct() {
 		$this->xml_file = XML_DIR.'/references.xml';
 	
 		$this->xml = simplexml_load_file($this->xml_file);
 	}
-
 
 
 
@@ -47,6 +52,8 @@ class ReferencesModel extends Object
 
 		return $ref;
 	}
+
+
 
 	/**
 	 *	Returns limited count of latest references. 
@@ -86,8 +93,9 @@ class ReferencesModel extends Object
 
 		return $out;
 	}
-	
-	
+
+
+
 	/**
 	 *	Returns references from one category
 	 *
@@ -104,7 +112,9 @@ class ReferencesModel extends Object
 		
 		return $references;
 	}
-	
+
+
+
 	/**
 	 *	Finds all categories in XML file
 	 *
@@ -121,6 +131,5 @@ class ReferencesModel extends Object
 		}
 		
 		return $out;
-	}
-	
+	}	
 }
