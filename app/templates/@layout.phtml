@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="{$lang}">
+<head>
+	<title>{block #title}{/block}</title>
+
+	<meta charset="utf-8" />
+	{if isset($robots)}<meta name="robots" content="{$robots}" />{/if}
+
+	<link rel="stylesheet" href="{$basePath}/css/main.css">
+	<script src="{$basePath}/js/jquery-1.4.2.js"></script>
+	<script src="{$basePath}/js/jquery.easing.min.js"></script>
+	<script src="{$basePath}/js/jquery.lavalamp.min.js"></script>
+	<script src="{$basePath}/js/scripts.js"></script>
+	
+	<!--[if IE]>  
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>  
+	<![endif]--> 
+</head>
+<body>
+
+<div id="line1" class="line">&nbsp;</div>
+
+{foreach $flashes as $flash}<div class="flash {$flash->type}">{$flash->message}</div>{/foreach}
+
+{include #content}
+
+<div id="footer">
+	<div class="footer content">
+		<div class="fl copyright">
+			<span class="c-grey">Copyright &copy; 2010.</span> <a href="http://mariancepa.com" class="c-dark">mariancepa.com</a>
+		</div>
+		<div class="fr">
+			<img src="{$basePath}/img/mc-logo-footer.png" title="MarianCepa.com" class="footer-logo">
+		</div>
+		<br class="cb">
+	</div>
+</div>
+
+<!-- - - - - - - absolute positioned elements - - - - - - - - - - - - - -->
+<div class="content">
+	<div id="logo">
+		<a href="{$basePath}"><img src="{$basePath}/img/mc-logo.png" alt="mc-logo.png" title="MarianCepa.com"></a>
+	</div>
+
+	<div id="menu">
+	
+		<ul class="menu lava">
+		{foreach $menuItems as $id => $item}
+			<li {ifCurrent $id}class="current"{/if}><a href="{plink $id}">{$item}</a></li>
+		{/foreach}
+		</ul>
+	</div>
+
+	<div id="langbox">
+		<ul class="lang">
+			<li class="en"><a href="{link this 'lang'=>'en'}"><img src="{$basePath}/img/flag-en.gif" alt="flag-en" title="English"></a></li>
+			<li class="sk"><a href="{link this 'lang'=>'sk'}"><img src="{$basePath}/img/flag-sk.gif" alt="flag-sk" title="Slovensky"></a></li>
+		</ul>
+	</div>
+
+	<div id="flower">
+		<img src="{$basePath}/img/flower.png" title="kvet" alt="flower image">
+	</div>
+</div>
+
+<div id="shark">&nbsp;</div>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+{block title}References{/block}
+
+{block content}
+
+<div id="top" class="content">
+	<h2 class="fl">References:</h2>
+	
+	<ul class="submenu lava">
+		{foreach $submenuItems as $id=>$value}
+		<li {ifCurrent $id}class="current"{/if}><a href="{plink References:category, 'id' => $id}">{!$value}</a></li>
+		{/foreach}
+	</ul>
+	<br class="cb">
+</div>
+
+<div class="line line2">&nbsp;</div>
+
+{foreach $references as $reference}
+<div class="content reference">
+	<div class="thumb fl">
+		<a href="{$basePath}/files/{$reference['image_full']}"><img src="{$basePath}/files/{$reference['image_references']}"></a>
+	</div>
+	<div class="info fl">
+		<p class="text c-white">{!$reference['name']},<br />{!$reference['description']}</p>
+		<p class="tag c-dark">{$reference['category']}</p>
+	</div>
+	<br class="cb">
+</div>
+<div n:if="!$iterator->last" class="line line2">&nbsp;</div>
+{/foreach}
+
+<div class="content">
+	<!-- <div class="pager">
+		<ul>
+			<li><a href="#">1</a></li>
+			<li><a href="#">1</a></li>
+			<li><a href="#">1</a></li>
+			<li><a href="#">1</a></li>
+			<li><a href="#">1</a></li>
+			<li><a href="#">1</a></li>
+		</ul>
+	</div>
+	<br class="cb"> -->
+	
+	<img src="{$basePath}/img/feathers.png" id="feathers">
+</div>
+
+{/block}

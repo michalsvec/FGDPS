@@ -1,0 +1,60 @@
+{block title}{!_"About me"}{/block}
+
+{block content}
+<div id="top" class="content">
+	<h1>{!_"top_heading"}</h1>
+
+	{!_"top_text"}
+</div>
+
+<div id="line2" class="line">&nbsp;</div>
+
+<div class="content">
+	<div class="col left">
+		<h2>{!_"biography_heading"}</h2>
+		<div class="taj col-inner bright">
+			<table class="biography border-bottom">
+			<tr>
+				<td class="c-grey">2009</td>
+				<td>
+					{!_"biography_2009"}
+				</td>
+			</tr>
+			<tr class="last">
+				<td class="c-grey">2010</td>
+				<td>
+					{!_"biography_2010"}
+				</td>
+			</tr>
+			</table>
+			<p class="border-bottom">
+				{!_"interests"}
+			</p>
+			<p class="social-icons border-bottom">
+				<a href="#" class="facebook"><img src="{$basePath}/img/ico-fb.png" title="Facebook"></a>
+				<a href="#" class="twitter"><img src="{$basePath}/img/ico-twitter.png" title="Twitter"></a>
+				<a href="#" class="lastfm"><img src="{$basePath}/img/ico-lastfm.png" title="Last.fm"></a>
+				<a href="#" class="youtube"><img src="{$basePath}/img/ico-yt.png" title="YouTube"></a>
+				<a href="#" class="picasa"><img src="{$basePath}/img/ico-picasa.png" title="Picasa"></a>
+			</p>
+		</div>
+	</div>
+
+	<div class="col right">
+		<h2 class="col-inner">{!_"latest works"}</h2>
+		<div class="taj col-inner ">
+			<div id="works" class="works border-bottom">
+				{foreach $references as $reference}
+				<a href="{plink References:view, 'id'=>$reference['id']}"><img src="{$basePath}/files/{$reference['image_about']}" title="{$reference['name']}"></a>
+				{/foreach}
+				<br class="cb">
+			</div>
+			<p class="border-bottom tac">
+				<a href="#" class="c-grey">{!_"see all my works"}</a>
+			</p>
+		</div>
+		<br class="cb">
+	</div>
+	<br class="cb">
+</div>
+{/block}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<strings>
+	<item str="About me">
+		<![CDATA[About me]]></item>
+
+	<item str="top_heading"><![CDATA[Hi <span class="c-dark">there !</span>]]></item>
+	<item str="top_text">
+		<![CDATA[<p>Welcome to my online portfolio. My name is <span class="c-orange">Marián Čepa</span> (as you've probably already guessed). I'm 19 years old <span class="c-dark">graphic designer</span> from Slovakia. I've fallen in love with colors and curves about 3 years ago.</p>
+		<p>I'm more than <span class="c-dark">2in1!</span> Fresh and modern webdesign? Animated banner? Creative poster or flyer? Cool t-shirts? <span class="c-orange">Here we go!</span> <span class="c-grey">I'm available for freelancing!</span></p>]]></item>
+	<item str="biography_heading">
+		<![CDATA[My <span class="c-dark">biography</span>]]></item>
+	<item str="biography_2009">
+		<![CDATA[I’d finished grammar school in Stropkov <span class="c-grey s-smaller">(SK)</span> &amp; started my ”design career” using nickname <span class="c-dark">xmayo</span>. After one-year experience I decided to create my own online portfolio.]]></item>
+	<item str="biography_2010">
+		<![CDATA[Currently, I’m studying <span class="c-dark">information technology</span> at Brno University of Technology <span class="c-grey s-smaller">(CZ)</span>.]]></item>
+	<item str="interests">
+		<![CDATA[The odd times when I am not glued to my screen, I love doing sports, especially <span class="c-dark">football</span>, playing acoustic <span class="c-dark">guitar</span>, taking <span class="c-dark">photos</span> and listening to <span class="c-dark">music</span>. I’m a bit into chinese culture - taoism, tea and <span class="c-dark">Wing Tsun</span>.]]></item>
+	<item str="latest works">
+		<![CDATA[Latest <span class="c-dark">works</span>]]></item>
+	<item str="see all my works">
+		<![CDATA[See all my works &gt;]]></item>
+</strings>

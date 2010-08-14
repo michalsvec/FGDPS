@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<references_configuration>
+	<category default="true">
+		<name>Webdesign</name>
+		
+		<reference added="2010-08-09" id="ufb-brno">
+			<image type="about">references/ref-mc-homepage.png</image>
+			<image type="references">references/ref-mc-list.png</image>
+			<image type="full">references/ref-ufb-full.png</image>
+
+			<name><![CDATA[Ultimate frisbee Brno]]></name>
+			<description><![CDATA[<a href="http://ufb.cz">www.ufb.cz</a>]]></description>
+		</reference>
+
+		<reference added="2010-08-02" id="ufb2">
+			<image type="about">references/ref-mc-homepage.png</image>
+			<image type="references">references/ref-mc-list.png</image>
+			<image type="full">references/ref-ufb-full.png</image>
+
+			<name><![CDATA[Ultimate frisbee Brno]]></name>
+			<description><![CDATA[<a href="http://ufb.cz">www.ufb.cz</a>]]></description>
+		</reference>
+
+		<reference added="2010-08-09" id="ufb2aa">
+			<image type="about">references/ref-mc-homepage.png</image>
+			<image type="references">references/ref-mc-list.png</image>
+			<image type="full">references/ref-ufb-full.png</image>
+
+			<name><![CDATA[Ultimate frisbee Brno]]></name>
+			<description><![CDATA[<a href="http://ufb.cz">www.ufb.cz</a>]]></description>
+		</reference>
+	</category>
+
+	<category>
+		<name><![CDATA[<span class="c-white">Print</span>works]]></name>
+		
+		<reference added="2010-08-03" id="ufb2sadasd">
+			<image type="about">references/ref-mc-homepage.png</image>
+			<image type="references">references/ref-mc-list.png</image>
+			<image type="full">references/ref-ufb-full.png</image>
+
+			<name><![CDATA[Ultimate frisbee Brno]]></name>
+			<description><![CDATA[<a href="http://ufb.cz">www.ufb.cz</a>]]></description>
+		</reference>
+
+		<reference added="2010-08-04" id="ufb2xczxvb">
+			<image type="about">references/ref-mc-homepage.png</image>
+			<image type="references">references/ref-mc-list.png</image>
+			<image type="full">references/ref-ufb-full.png</image>
+
+			<name><![CDATA[Ultimate frisbee Brno]]></name>
+			<description><![CDATA[<a href="http://ufb.cz">www.ufb.cz</a>]]></description>
+		</reference>
+		
+	</category>
+	
+	<category>
+		<name><![CDATA[<span class="c-white">Other</span>graphics]]></name>
+		
+		<reference added="2010-08-03" id="ufb2sadasd">
+			<image type="about">references/ref-mc-homepage.png</image>
+			<image type="references">references/ref-mc-list.png</image>
+			<image type="full">references/ref-ufb-full.png</image>
+
+			<name><![CDATA[Ultimate frisbee Brno]]></name>
+			<description><![CDATA[<a href="http://ufb.cz">www.ufb.cz</a>]]></description>
+		</reference>
+
+		<reference added="2010-08-04" id="ufb2xczxvb">
+			<image type="about">references/ref-mc-homepage.png</image>
+			<image type="references">references/ref-mc-list.png</image>
+			<image type="full">references/ref-ufb-full.png</image>
+
+			<name><![CDATA[Ultimate frisbee Brno]]></name>
+			<description><![CDATA[<a href="http://ufb.cz">www.ufb.cz</a>]]></description>
+		</reference>
+		
+	</category>
+</references_configuration>
