@@ -36,7 +36,7 @@ class XML_Translator implements ITranslator
 		$this->lang = $lang;
 		
 		// translation file for presenter
-		$this->xml_pres = $this->load_translation_file(XML_DIR.'/lang_'.$this->lang.'_'.$this->presenter.'.xml');
+		$this->xml_pres = $this->load_translation_file(XML_DIR.'/lang_'.$this->lang.'_'.strtolower($this->presenter).'.xml');
 		// common translation file
 		$this->xml_common = $this->load_translation_file(XML_DIR.'/lang_'.$this->lang.'_common.xml');
 	}
@@ -71,9 +71,10 @@ class XML_Translator implements ITranslator
 	function load_translation_file($filename) {
 		if(file_exists($filename)) {
 			$xml = simplexml_load_file($filename,'SimpleXMLElement',LIBXML_NOCDATA);
+			return $xml;
 		}
-		return $xml;
+		else {
+			throw new Exception("Can not load XML file.");
+		}
 	}
-
-
 }

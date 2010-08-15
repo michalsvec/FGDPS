@@ -21,7 +21,6 @@ $(document).ready(function () {
 	add_img_hoverchange('#works a img');
 	
 	set_ul_width('.pager ul');
-//	set_ul_width('.submenu');	
 
 
 	$('.contact input,.contact textarea').click(function () {
@@ -33,7 +32,7 @@ $(document).ready(function () {
 		speed: 700
 	});
 	
-	
+	$('.colorbox').colorbox();
 });
 
 /* prida hover nad vybrany selektor */
@@ -47,8 +46,6 @@ function add_hovered(selector) {
 			$(this).removeClass('hovered');
 		}
 	);
-	
-	
 }
 
 function add_img_hoverchange (selector) {

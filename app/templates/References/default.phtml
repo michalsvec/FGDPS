@@ -18,7 +18,7 @@
 {foreach $references as $reference}
 <div class="content reference">
 	<div class="thumb fl">
-		<a href="{$basePath}/files/{$reference['image_full']}"><img src="{$basePath}/files/{$reference['image_references']}"></a>
+		<a href="{$basePath}/files/{$reference['image_full']}" class="colorbox"><img src="{$basePath}/files/{$reference['image_references']}"></a>
 	</div>
 	<div class="info fl">
 		<p class="text c-white">{!$reference['name']},<br />{!$reference['description']}</p>
