@@ -20,7 +20,7 @@
 	<key>metaData</key>
 	<dict/>
 	<key>showFileHierarchyDrawer</key>
-	<true/>
+	<false/>
 	<key>treeState</key>
 	<dict>
 		<key>xmayo-nette</key>
@@ -32,6 +32,6 @@
 		</dict>
 	</dict>
 	<key>windowFrame</key>
-	<string>{{89, 0}, {1280, 1058}}</string>
+	<string>{{0, 0}, {1280, 1058}}</string>
 </dict>
 </plist>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translate>
+	<item str="Get in touch title">Get in touch</item>
+	<item str="Get in touch"><![CDATA[Get <span class="c-dark">in touch!</span>]]></item>
+	
+	<item str="Form intro"><![CDATA[<p>Feel free to contact me. Leave a message if you want to <span class="c-dark">hire me</span> or if you just simply want to say hi and I will get back to you as soon as possible.</p>]]></item>
+	
+	<item str="Your name">Your name (required)</item>
+	
+	<item str="Please, enter your name!">Please, enter your name!</item>
+
+	<item str="Your e-mail address (required)">Your e-mail address (required)</item>
+
+	<item str="Invalid e-mail address!">Invalid e-mail address!</item>
+
+	<item str="Subject">Subject</item>
+	
+	<item str="Please, enter some text!">Please, enter some text!</item>
+
+	<item str="Anything to say?">Anything to say? (message required)</item>
+	
+	<item str="SEND MESSAGE">SEND MESSAGE</item>
+	
+	<item str="My contact details">My contact details</item>
+
+	<item str="Current location">Current location</item>
+	
+	<item str="Marian Cepa - designer"><![CDATA[<span class="c-dark">Marián Čepa</span> - designer]]></item>
+	
+	<item str="Current status">Current status</item>
+	
+	<item str="Partners and friends"><![CDATA[Partners <span class="c-dark">&amp; Friends</span>]]></item>
+	
+	<item str="links-left"><![CDATA[
+		<span class="c-dark">Your Ideas</span> - lorem ipsum dolor [yourideas.hu]<br />
+		<span class="c-dark">Misa Svec</span> - lorem ipsum dolor [yoursite.cz]<br />
+		<span class="c-dark">Martin Kačmar</span> - lorem ipsum dolor [kacmar.sk]<br />
+		<span class="c-dark">Roman Sládeček</span> - infoweb [romansladecek.com]<br />
+		]]></item>
+	
+	<item str="links-right"><![CDATA[
+		<span class="c-dark">Your Ideas</span> - lorem ipsum dolor [yourideas.hu]<br />
+		<span class="c-dark">Misa Svec</span> - lorem ipsum dolor [yoursite.cz]<br />
+		<span class="c-dark">Martin Kačmar</span> - lorem ipsum dolor [kacmar.sk]<br />
+		<span class="c-dark">Roman Sládeček</span> - infoweb [romansladecek.com]<br />
+		]]></item>
+	
+</translate>

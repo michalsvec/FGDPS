@@ -17,6 +17,17 @@ abstract class BasePresenter extends Presenter
 	/** @persitent */
 	public $lang = 'en';
 
+	/** @vat SimpleXML configuration file */
+	private $config;
+
+	protected function startup() {
+		parent::startup();
+
+		$this->config = simplexml_load_file(XML_DIR.'/config.xml');
+	}
+
+
+
 	protected function beforeRender()
 	{
 		// menu structure
@@ -27,6 +38,7 @@ abstract class BasePresenter extends Presenter
 		);
 		
 		$this->template->lang = $this->lang;
+
 
 	}
 

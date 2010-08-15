@@ -52,6 +52,7 @@ class XML_Translator implements ITranslator
 	 * @return string
 	 */
 	function translate($message, $count = NULL) {
+	
 		$string = $this->xml_pres->xpath('//item[@str="'.$message.'"]');
 		if(empty($string))
 			$string = $this->xml_common->xpath('/strings/item[str="'.$message.'"]');

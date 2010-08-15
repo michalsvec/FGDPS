@@ -1,14 +1,14 @@
-<?php //netteCache[01]000211a:2:{s:4:"time";s:21:"0.72180500 1281782963";s:9:"callbacks";a:1:{i:0;a:3:{i:0;a:2:{i:0;s:5:"Cache";i:1;s:9:"checkFile";}i:1;s:56:"/Users/www/xmayo-nette/app/templates/About/default.phtml";i:2;i:1281782963;}}}?><?php
+<?php //netteCache[01]000211a:2:{s:4:"time";s:21:"0.67666700 1281873364";s:9:"callbacks";a:1:{i:0;a:3:{i:0;a:2:{i:0;s:5:"Cache";i:1;s:9:"checkFile";}i:1;s:56:"/Users/www/xmayo-nette/app/templates/About/default.phtml";i:2;i:1281869634;}}}?><?php
 // file …/templates/About/default.phtml
 //
 
-$_cb = LatteMacros::initRuntime($template, NULL, '37dc75ef2c'); unset($_extends);
+$_cb = LatteMacros::initRuntime($template, NULL, '852bb28b13'); unset($_extends);
 
 
 //
 // block title
 //
-if (!function_exists($_cb->blocks['title'][] = '_cbb7cb783560d_title')) { function _cbb7cb783560d_title($_args) { extract($_args)
+if (!function_exists($_cb->blocks['title'][] = '_cbbdede5be9e2_title')) { function _cbbdede5be9e2_title($_args) { extract($_args)
 ;echo $template->translate("About me") ;
 }}
 
@@ -16,7 +16,7 @@ if (!function_exists($_cb->blocks['title'][] = '_cbb7cb783560d_title')) { functi
 //
 // block content
 //
-if (!function_exists($_cb->blocks['content'][] = '_cbb5e3ea5d778_content')) { function _cbb5e3ea5d778_content($_args) { extract($_args)
+if (!function_exists($_cb->blocks['content'][] = '_cbbe216521ac7_content')) { function _cbbe216521ac7_content($_args) { extract($_args)
 ?>
 <div id="top" class="content">
 	<h1><?php echo $template->translate("top_heading") ?></h1>
@@ -52,11 +52,7 @@ if (!function_exists($_cb->blocks['content'][] = '_cbb5e3ea5d778_content')) { fu
 
 			</p>
 			<p class="social-icons border-bottom">
-				<a href="#" class="facebook"><img src="<?php echo TemplateHelpers::escapeHtml($basePath) ?>/img/ico-fb.png" title="Facebook"></a>
-				<a href="#" class="twitter"><img src="<?php echo TemplateHelpers::escapeHtml($basePath) ?>/img/ico-twitter.png" title="Twitter"></a>
-				<a href="#" class="lastfm"><img src="<?php echo TemplateHelpers::escapeHtml($basePath) ?>/img/ico-lastfm.png" title="Last.fm"></a>
-				<a href="#" class="youtube"><img src="<?php echo TemplateHelpers::escapeHtml($basePath) ?>/img/ico-yt.png" title="YouTube"></a>
-				<a href="#" class="picasa"><img src="<?php echo TemplateHelpers::escapeHtml($basePath) ?>/img/ico-picasa.png" title="Picasa"></a>
+<?php LatteMacros::includeTemplate('../block_social.phtml', $template->getParams(), $_cb->templates['852bb28b13'])->render() ?>
 			</p>
 		</div>
 	</div>

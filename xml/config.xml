@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<contact_to>pekaboo@centrum.cz</contact_to>
+	<contact_from>contact@mariancepa.com</contact_from>
+	<contact_subject>Kontakt z mariancepa.com</contact_subject>
+
+	<log_file>log/contactLog.txt</log_file>
+</config>

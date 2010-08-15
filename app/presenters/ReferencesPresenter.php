@@ -23,6 +23,11 @@ class ReferencesPresenter extends BasePresenter
 	protected function startup()
 	{
 		parent::startup();
+
+		// sets the translator for actual presenter
+		$translator = new XML_Translator("References", $this->lang);
+		$this->template->setTranslator($translator);
+
 		
 		$this->model = new ReferencesModel();
 	}

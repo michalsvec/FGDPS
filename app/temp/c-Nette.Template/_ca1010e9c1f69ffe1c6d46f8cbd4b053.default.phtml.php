@@ -1,26 +1,26 @@
-<?php //netteCache[01]000216a:2:{s:4:"time";s:21:"0.72264500 1281783041";s:9:"callbacks";a:1:{i:0;a:3:{i:0;a:2:{i:0;s:5:"Cache";i:1;s:9:"checkFile";}i:1;s:61:"/Users/www/xmayo-nette/app/templates/References/default.phtml";i:2;i:1281783040;}}}?><?php
+<?php //netteCache[01]000216a:2:{s:4:"time";s:21:"0.32761400 1281800867";s:9:"callbacks";a:1:{i:0;a:3:{i:0;a:2:{i:0;s:5:"Cache";i:1;s:9:"checkFile";}i:1;s:61:"/Users/www/xmayo-nette/app/templates/References/default.phtml";i:2;i:1281800863;}}}?><?php
 // file …/templates/References/default.phtml
 //
 
-$_cb = LatteMacros::initRuntime($template, NULL, '183afe34c1'); unset($_extends);
+$_cb = LatteMacros::initRuntime($template, NULL, '5b7b1c795d'); unset($_extends);
 
 
 //
 // block title
 //
-if (!function_exists($_cb->blocks['title'][] = '_cbb256f3d1cd8_title')) { function _cbb256f3d1cd8_title($_args) { extract($_args)
-?>References<?php
+if (!function_exists($_cb->blocks['title'][] = '_cbbf4df2e0802_title')) { function _cbbf4df2e0802_title($_args) { extract($_args)
+;echo TemplateHelpers::escapeHtml($template->translate("References")) ;
 }}
 
 
 //
 // block content
 //
-if (!function_exists($_cb->blocks['content'][] = '_cbb36e1e46926_content')) { function _cbb36e1e46926_content($_args) { extract($_args)
+if (!function_exists($_cb->blocks['content'][] = '_cbbad7c336916_content')) { function _cbbad7c336916_content($_args) { extract($_args)
 ?>
 
 <div id="top" class="content">
-	<h2 class="fl">References:</h2>
+	<h2 class="fl"><?php echo TemplateHelpers::escapeHtml($template->translate("References")) ?>:</h2>
 	
 	<ul class="submenu lava">
 <?php foreach ($iterator = $_cb->its[] = new SmartCachingIterator($submenuItems) as $id=>$value): ?>

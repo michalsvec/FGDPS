@@ -1,14 +1,14 @@
-<?php //netteCache[01]000206a:2:{s:4:"time";s:21:"0.00964400 1281702249";s:9:"callbacks";a:1:{i:0;a:3:{i:0;a:2:{i:0;s:5:"Cache";i:1;s:9:"checkFile";}i:1;s:51:"/Users/www/xmayo-nette/app/templates//@layout.phtml";i:2;i:1281308596;}}}?><?php
+<?php //netteCache[01]000206a:2:{s:4:"time";s:21:"0.86592900 1281869518";s:9:"callbacks";a:1:{i:0;a:3:{i:0;a:2:{i:0;s:5:"Cache";i:1;s:9:"checkFile";}i:1;s:51:"/Users/www/xmayo-nette/app/templates//@layout.phtml";i:2;i:1281869466;}}}?><?php
 // file …/templates//@layout.phtml
 //
 
-$_cb = LatteMacros::initRuntime($template, NULL, 'aae819e96b'); unset($_extends);
+$_cb = LatteMacros::initRuntime($template, NULL, '25c21cf5c4'); unset($_extends);
 
 
 //
 // block title
 //
-if (!function_exists($_cb->blocks['title'][] = '_cbb3c02e45e9b_title')) { function _cbb3c02e45e9b_title($_args) { extract($_args)
+if (!function_exists($_cb->blocks['title'][] = '_cbbc53f1c38ad_title')) { function _cbbc53f1c38ad_title($_args) { extract($_args)
 ;
 }}
 
