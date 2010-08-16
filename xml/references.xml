@@ -1,79 +1,142 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<references_configuration>
-	<category default="true">
+<references_configuration> 
+	<category default="true"> 
+		<title><![CDATA[<span class="c-white">Web</span>design]]></title> 
 		<name>Webdesign</name>
 		
-		<reference added="2010-08-09" id="ufb-brno">
-			<image type="about">references/ref-mc-homepage.png</image>
-			<image type="references">references/ref-mc-list.png</image>
-			<image type="full">references/ref-ufb-full.png</image>
-
-			<name><![CDATA[Ultimate frisbee Brno]]></name>
-			<description><![CDATA[<a href="http://ufb.cz">www.ufb.cz</a>]]></description>
-		</reference>
-
-		<reference added="2010-08-02" id="ufb2">
-			<image type="about">references/ref-mc-homepage.png</image>
-			<image type="references">references/ref-mc-list.png</image>
-			<image type="full">references/ref-ufb-full.png</image>
-
-			<name><![CDATA[Ultimate frisbee Brno]]></name>
-			<description><![CDATA[<a href="http://ufb.cz">www.ufb.cz</a>]]></description>
-		</reference>
-
-		<reference added="2010-08-09" id="ufb2aa">
-			<image type="about">references/ref-mc-homepage.png</image>
-			<image type="references">references/ref-mc-list.png</image>
-			<image type="full">references/ref-ufb-full.png</image>
-
-			<name><![CDATA[Ultimate frisbee Brno]]></name>
-			<description><![CDATA[<a href="http://ufb.cz">www.ufb.cz</a>]]></description>
-		</reference>
-	</category>
-
-	<category>
-		<name><![CDATA[<span class="c-white">Print</span>works]]></name>
+		<reference added="2010-08-09" id="aeroweb"> 
+			<image type="references">references/web/small-aero.png</image> 
+			<image type="full">references/web/full-aero.jpg</image> 
+ 
+			<name><![CDATA[Aeroweb]]></name> 
+			<description><![CDATA[Portfolio design - Aero style]]></description> 
+		</reference> 
+ 
+		<reference added="2010-08-02" id="ufb"> 
+			<image type="about">references/latest-ufb.png</image> 
+			<image type="references">references/web/small-ufb.png</image> 
+			<image type="full">references/web/full-ufb.jpg</image> 
+ 
+			<name><![CDATA[Ultimate frisbee Brno]]></name> 
+			<description><![CDATA[<a href="http://ufb.cz">www.ufb.cz</a>]]></description> 
+		</reference> 
+ 
+		<reference added="2010-08-09" id="mclogo"> 
+			<image type="about">references/web/latest-mclogo.png</image> 
+			<image type="references">references/web/small-mclogo.png</image> 
+			<image type="full">references/web/full-mclogo.jpg</image> 
+ 
+			<name><![CDATA[MC Logotype]]></name> 
+			<description><![CDATA[Marian Cepa - logotyp]]></description> 
+		</reference> 
 		
-		<reference added="2010-08-03" id="ufb2sadasd">
-			<image type="about">references/ref-mc-homepage.png</image>
-			<image type="references">references/ref-mc-list.png</image>
-			<image type="full">references/ref-ufb-full.png</image>
-
-			<name><![CDATA[Ultimate frisbee Brno]]></name>
-			<description><![CDATA[<a href="http://ufb.cz">www.ufb.cz</a>]]></description>
-		</reference>
-
-		<reference added="2010-08-04" id="ufb2xczxvb">
-			<image type="about">references/ref-mc-homepage.png</image>
-			<image type="references">references/ref-mc-list.png</image>
-			<image type="full">references/ref-ufb-full.png</image>
-
-			<name><![CDATA[Ultimate frisbee Brno]]></name>
-			<description><![CDATA[<a href="http://ufb.cz">www.ufb.cz</a>]]></description>
-		</reference>
+		<reference added="2010-08-09" id="urobmio"> 
+			<image type="references">references/web/small-urobmio.png</image> 
+			<image type="full">references/web/full-urobmio.jpg</image> 
+ 
+			<name><![CDATA[Urobmi.sk]]></name> 
+			<description><![CDATA[Webdesigner's studio]]></description> 
+		</reference> 
+				
+		<reference added="2010-08-09" id="urobmiws"> 
+			<image type="references">references/web/small-urobmiws.png</image> 
+			<image type="full">references/web/full-urobmiws.jpg</image> 
+ 
+			<name><![CDATA[Urobmi.sk]]></name> 
+			<description><![CDATA[Welcome screen]]></description> 
+		</reference> 
 		
-	</category>
+		<reference added="2010-08-09" id="zahrajsi"> 
+			<image type="references">references/web/small-zahrajsi.png</image> 
+			<image type="full">references/web/full-zahrajsi.jpg</image> 
+ 
+			<name><![CDATA[Zahraj si!]]></name> 
+			<description><![CDATA[Gaming portal]]></description> 
+		</reference> 
+				
+		<reference added="2010-08-09" id="zelenydom"> 
+			<image type="references">references/web/small-zelenydom.png</image> 
+			<image type="full">references/web/full-zelenydom.jpg</image> 
+ 
+			<name><![CDATA[Zeleny dom]]></name> 
+			<description><![CDATA[Teplate]]></description> 
+		</reference> 
+			
+		<reference added="2010-08-09" id="blitz"> 
+			<image type="references">references/web/small-blitz.png</image> 
+			<image type="full">references/web/full-blitz.jpg</image> 
+ 
+			<name><![CDATA[Zeleny dom]]></name> 
+			<description><![CDATA[Teplate]]></description> 
+		</reference> 
+	</category> 
+ 
+	<category> 
+		<title><![CDATA[<span class="c-white">Print</span>works]]></title> 
+		<name>Printworks</name>
+		
+		
+		<reference added="2010-08-03" id="fitparty"> 
+			<image type="references">references/print/small-fitparty.png</image> 
+			<image type="full">references/print/full-fitparty.jpg</image> 
+ 
+			<name><![CDATA[Student party]]></name> 
+			<description><![CDATA[Poster]]></description> 
+		</reference> 
+ 
+		<reference added="2010-08-04" id="fit-dzd"> 
+			<image type="about">references/print/latest-dzdposter.png</image> 
+			<image type="references">references/print/small-dzdposter.png</image> 
+			<image type="full">references/print/full-dzdposter.jpg</image> 
+ 
+			<name><![CDATA[Student party]]></name> 
+			<description><![CDATA[Poster]]></description> 
+		</reference> 
+		
+		<reference added="2010-08-03" id="fitfekt"> 
+			<image type="references">references/print/small-fitfekt.png</image> 
+			<image type="full">references/print/full-fitfekt.jpg</image> 
+ 
+			<name><![CDATA[School ball]]></name> 
+			<description><![CDATA[Poster]]></description> 
+		</reference> 
+				
+		<reference added="2010-08-03" id="oznamko-fb"> 
+			<image type="references">references/print/small-oznamko1.png</image> 
+			<image type="full">references/print/full-oznamko1z2.jpg</image> 
+			<image type="full">references/print/full-oznamko2z2.jpg</image> 
+ 
+			<name><![CDATA[Graduation announcement]]></name> 
+			<description><![CDATA[Facebook theme, Print]]></description> 
+		</reference> 
+	</category> 
 	
-	<category>
-		<name><![CDATA[<span class="c-white">Other</span>graphics]]></name>
+	<category> 
+		<title><![CDATA[<span class="c-white">Other</span>graphics]]></title>
+		<name>Othergraphics</name>
 		
-		<reference added="2010-08-03" id="ufb2sadasd">
-			<image type="about">references/ref-mc-homepage.png</image>
-			<image type="references">references/ref-mc-list.png</image>
-			<image type="full">references/ref-ufb-full.png</image>
-
-			<name><![CDATA[Ultimate frisbee Brno]]></name>
-			<description><![CDATA[<a href="http://ufb.cz">www.ufb.cz</a>]]></description>
-		</reference>
-
-		<reference added="2010-08-04" id="ufb2xczxvb">
-			<image type="about">references/ref-mc-homepage.png</image>
-			<image type="references">references/ref-mc-list.png</image>
-			<image type="full">references/ref-ufb-full.png</image>
-
-			<name><![CDATA[Ultimate frisbee Brno]]></name>
-			<description><![CDATA[<a href="http://ufb.cz">www.ufb.cz</a>]]></description>
-		</reference>
+		<reference added="2010-08-03" id="sk-baw"> 
+			<image type="references">references/other/small-skbaw.png</image> 
+			<image type="full">references/other/full-skbaw.jpg</image> 
+ 
+			<name><![CDATA[SK-Gaming, Contest]]></name> 
+			<description><![CDATA[Wallpaper]]></description> 
+		</reference>  
+ 
+		<reference added="2010-08-04" id="sk-win"> 
+			<image type="references">references/other/small-skwin.png</image> 
+			<image type="full">references/other/full-skwin.jpg</image> 
+ 
+			<name><![CDATA[SK-Gaming, Contest]]></name> 
+			<description><![CDATA[3rd place, Wallpaper]]></description> 
+		</reference> 
+		 
+		<reference added="2010-08-04" id="pokerwall"> 
+			<image type="references">references/other/small-pokerwall.png</image> 
+			<image type="full">references/other/full-pokerwall.jpg</image> 
+ 
+			<name><![CDATA[Can you beat me?]]></name> 
+			<description><![CDATA[Poker theme, Wallpaper]]></description> 
+		</reference> 
 		
-	</category>
+	</category> 
 </references_configuration>

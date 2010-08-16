@@ -30,23 +30,21 @@
 			<p class="border-bottom">
 				{!_"interests"}
 			</p>
-			<p class="social-icons border-bottom">
-				{include '../block_social.phtml'}
-			</p>
+			{include '../block_social.phtml'}
 		</div>
 	</div>
 
 	<div class="col right">
-		<h2 class="col-inner">{!_"latest works"}</h2>
 		<div class="taj col-inner ">
+			<h2>{!_"latest works"}</h2>
 			<div id="works" class="works border-bottom">
 				{foreach $references as $reference}
-				<a href="{plink References:view, 'id'=>$reference['id']}"><img src="{$basePath}/files/{$reference['image_about']}" title="{$reference['name']}"></a>
+				<a href="{plink References:category, 'id'=>strip_tags($reference['category'])}" {if $iterator->last}class="last"{/if}><img src="{$basePath}/files/{$reference['image_about']}" title="{$reference['name']}"></a>
 				{/foreach}
 				<br class="cb">
 			</div>
 			<p class="border-bottom tac">
-				<a href="#" class="c-grey">{!_"see all my works"}</a>
+				<a href="{plink References:}" class="c-grey">{!_"see all my works"}</a>
 			</p>
 		</div>
 		<br class="cb">

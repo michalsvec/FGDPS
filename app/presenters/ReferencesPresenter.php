@@ -51,7 +51,7 @@ class ReferencesPresenter extends BasePresenter
 		if(empty($this->category))
 			$this->category = 'Webdesign';
 
-		$this->template->references = $this->model->findByCategory('Webdesign');
+		$this->template->references = $this->model->findByCategory($this->category);
 
 	}
 
@@ -78,8 +78,8 @@ class ReferencesPresenter extends BasePresenter
 	 *
 	 *	@param string selected category
 	 */
-	public function renderCategory($category) {
-		$this->category = $category;
+	public function renderCategory($id) {
+		$this->category = $id;
 		$this->setView('default');
 		$this->renderDefault();
 	}

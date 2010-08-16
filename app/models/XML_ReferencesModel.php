@@ -43,6 +43,7 @@ class ReferencesModel extends Object
 
 		$ref['id'] = (string) $item->attributes()->id;
 		$ref['category'] = (string) $category->name;
+		$ref['category_title'] = (string) $category->title;
 		$ref['added'] = (string) $item->attributes()->added;
 		$ref['name'] = (string) $item->name;
 		$ref['description'] = (string) $item->description;
@@ -127,7 +128,7 @@ class ReferencesModel extends Object
 		
 		$out = array();
 		foreach($categories as $category) {
-			$out[strip_tags((string) $category->name)] = (string) $category->name;
+			$out[strip_tags((string) $category->name)] = (string) $category->title;
 		}
 		
 		return $out;

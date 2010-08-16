@@ -14,8 +14,9 @@ $(document).ready(function () {
 	add_hovered('#works a');
 	add_hovered('.lang li a');
 	add_hovered('.pager a');
+	add_hovered('.social-icons a');
 
-	add_img_hoverchange('.social-icons a img');
+//	add_img_hoverchange('.social-icons a img');
 	add_img_hoverchange('.footer-logo');
 	add_img_hoverchange('.lang a img');
 	add_img_hoverchange('#works a img');
