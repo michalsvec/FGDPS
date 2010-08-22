@@ -32,11 +32,13 @@ abstract class BasePresenter extends Presenter
 	{
 		// menu structure
 		$this->template->menuItems = array(
-			'About:' => 'About me',
-			'References:' => 'References',
-			'Getintouch:' => 'Get in touch',
+			'About:' => array( 'name' => 'About me'),
+			'References:' => array( 'name' => 'References'),
+			'Getintouch:' => array( 'name' => 'Get in touch'),
 		);
-		
+
+		$this->template->menuItems[$this->getName().':']['current'] = true;
+
 		$this->template->lang = $this->lang;
 
 

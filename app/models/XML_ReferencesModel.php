@@ -127,12 +127,15 @@ class ReferencesModel extends Object
 	 *	
 	 *	@return array category list 
 	 */
-	public function getCategoryList() {
+	public function getCategoryList($current) {
 		$categories = $this->xml->xpath('//category');
-		
+
 		$out = array();
 		foreach($categories as $category) {
-			$out[strip_tags((string) $category->title)] = (string) $category->name;
+			$title = strip_tags((string) $category->title);
+
+			$out[$title]['name'] = (string) $category->name;
+			if($title==$current) $out[$title]['current'] = true;
 		}
 
 		return $out;

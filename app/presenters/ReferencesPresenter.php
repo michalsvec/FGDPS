@@ -30,6 +30,12 @@ class ReferencesPresenter extends BasePresenter
 
 		
 		$this->model = new ReferencesModel();
+	
+		if(!$this->getParam('id'))
+			$this->category = 'Webdesign';
+		else
+			$this->category = $this->getParam('id');
+		
 	}
 
 
@@ -37,7 +43,7 @@ class ReferencesPresenter extends BasePresenter
 	protected function beforeRender() {
 		parent::beforeRender();
 
-		$this->template->submenuItems = $this->model->getCategoryList();
+		$this->template->submenuItems = $this->model->getCategoryList($this->category);
 	}
 
 
@@ -47,9 +53,6 @@ class ReferencesPresenter extends BasePresenter
 	 */
 	public function renderDefault()
 	{
-
-		if(empty($this->category))
-			$this->category = 'Webdesign';
 
 		$this->template->references = $this->model->findByCategory($this->category);
 

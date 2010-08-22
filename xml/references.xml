@@ -72,7 +72,7 @@
  
 	<category> 
 		<name><![CDATA[<span class="c-white">Print</span>works]]></name> 
-		<title>Print</title>
+		<title>Printworks</title>
 		
 		<reference added="2010-08-03" id="fitparty"> 
 			<image type="references">references/print/small-fitparty.png</image> 
@@ -111,7 +111,7 @@
 	
 	<category> 
 		<name><![CDATA[<span class="c-white">Other</span>graphics]]></name> 
-		<title>Other</title>
+		<title>Othergraphics</title>
 		
 		<reference added="2010-08-03" id="sk-baw"> 
 			<image type="references">references/other/small-skbaw.png</image> 

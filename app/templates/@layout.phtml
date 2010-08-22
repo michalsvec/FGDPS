@@ -48,7 +48,7 @@
 	
 		<ul class="menu lava">
 		{foreach $menuItems as $id => $item}
-			<li {ifCurrent $id}class="current"{/if}><a href="{plink $id}">{$item}</a></li>
+			<li {if isset($item['current'])}class="current"{/if}><a href="{plink $id}">{$item['name']}</a></li>
 		{/foreach}
 		</ul>
 	</div>
