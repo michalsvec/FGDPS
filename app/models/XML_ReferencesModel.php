@@ -68,7 +68,7 @@ class ReferencesModel extends Object
 
 		// creates key-value array with date as a key
 		foreach($this->xml as $category) {
-			foreach($category as $item) {
+			foreach($category->reference as $item) {
 				$references[(string) $item->attributes()->added][] = $this->referenceXMLToArr($category, $item);
 			}
 		}
@@ -79,11 +79,13 @@ class ReferencesModel extends Object
 		// selects only limited count of references
 		$out = array();
 		$cnt = 0;
-		foreach($references as $date) {
+		foreach($references as $k=>$date) {
 			foreach($date as $item) {
-				if($cnt < $limit) {
-					$out[] = $item;
-					$cnt++;
+				if($cnt <= $limit) {
+					if(isset($item['image_about'])) {
+						$out[] = $item;
+						$cnt++;
+					}
 				}
 				else 
 					break;
@@ -105,9 +107,11 @@ class ReferencesModel extends Object
 	 */
 	public function findByCategory($category) {
 		$references = array();
-		$category = $this->xml->xpath('//category[name="'.$category.'"]');
+		$category = $this->xml->xpath('//category[title="'.$category.'"]');
+
 
 		foreach($category[0]->reference as $reference) {
+		
 			$references[(string) $reference->attributes()->added] = $this->referenceXMLToArr($category[0], $reference);
 		}
 		
@@ -128,9 +132,9 @@ class ReferencesModel extends Object
 		
 		$out = array();
 		foreach($categories as $category) {
-			$out[strip_tags((string) $category->name)] = (string) $category->title;
+			$out[strip_tags((string) $category->title)] = (string) $category->name;
 		}
-		
+
 		return $out;
 	}	
 }

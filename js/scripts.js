@@ -9,17 +9,31 @@ $(document).ready(function () {
 			$('a img', this).attr('src', 'img/mc-logo.png');
 		}
 	);
+
+	/* switch logo image on hover */
+	$('.bwswitch').hover(
+		function () {
+//			$('.bw', this).fadeOut();
+			$('.color', this).fadeIn();
+		},
+		function () {
+			$('.color', this).fadeOut();
+//			$('.bw', this).fadeOut();
+		}
+	);
+
 	
 	add_hovered('#menu ul.menu li');
 	add_hovered('#works a');
 	add_hovered('.lang li a');
 	add_hovered('.pager a');
 	add_hovered('.social-icons a');
+	add_hovered('.author');
 
 //	add_img_hoverchange('.social-icons a img');
 	add_img_hoverchange('.footer-logo');
 	add_img_hoverchange('.lang a img');
-	add_img_hoverchange('#works a img');
+//	add_img_hoverchange('#works a img');
 	
 	set_ul_width('.pager ul');
 
@@ -76,3 +90,21 @@ function set_ul_width(selector) {
 	$(selector).width(width);
 
 }
+
+/**
+ * Image preloading script
+ *
+ * credits: http://engineeredweb.com/blog/09/12/preloading-images-jquery-and-javascript
+ */
+(function($) {
+  var cache = [];
+  // Arguments are image paths relative to the current page.
+  $.preLoadImages = function() {
+    var args_len = arguments.length;
+    for (var i = args_len; i--;) {
+      var cacheImage = document.createElement('img');
+      cacheImage.src = arguments[i];
+      cache.push(cacheImage);
+    }
+  }
+})(jQuery)

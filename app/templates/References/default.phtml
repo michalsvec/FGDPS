@@ -18,11 +18,14 @@
 {foreach $references as $reference}
 <div class="content reference">
 	<div class="thumb fl">
-		<a href="{$basePath}/files/{$reference['image_full']}" class="colorbox"><img src="{$basePath}/files/{$reference['image_references']}"></a>
+		<a href="{$basePath}/files/{!$reference['image_full']}" class="colorbox bwswitch">
+			<img src="{$basePath}/files/{$reference['image_references']}" title="{!$reference['name']}" style="display: none;" class="color" />
+			<img src="{$basePath}/img.php?file={$reference['image_references']}" title="{!$reference['name']}" class="bw" />
+		</a>
 	</div>
 	<div class="info fl">
 		<p class="text c-white">{!$reference['name']},<br />{!$reference['description']}</p>
-		<p class="tag c-dark">{$reference['category']}</p>
+		<p class="tag c-dark">{!$reference['category']}</p>
 	</div>
 	<br class="cb">
 </div>
@@ -30,7 +33,8 @@
 {/foreach}
 
 <div class="content">
-	<!-- <div class="pager">
+	<!-- 
+	<div class="pager">
 		<ul>
 			<li><a href="#">1</a></li>
 			<li><a href="#">1</a></li>
@@ -40,7 +44,8 @@
 			<li><a href="#">1</a></li>
 		</ul>
 	</div>
-	<br class="cb"> -->
+	<br class="cb"> 
+	-->
 	
 	<img src="{$basePath}/img/feathers.png" id="feathers">
 </div>

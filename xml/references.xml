@@ -1,7 +1,7 @@
 <references_configuration> 
 	<category default="true"> 
-		<title><![CDATA[<span class="c-white">Web</span>design]]></title> 
-		<name>Webdesign</name>
+		<name><![CDATA[<span class="c-white">Web</span>design]]></name> 
+		<title>Webdesign</title>
 		
 		<reference added="2010-08-09" id="aeroweb"> 
 			<image type="references">references/web/small-aero.png</image> 
@@ -12,7 +12,7 @@
 		</reference> 
  
 		<reference added="2010-08-02" id="ufb"> 
-			<image type="about">references/latest-ufb.png</image> 
+			<image type="about">references/web/latest-ufb.png</image> 
 			<image type="references">references/web/small-ufb.png</image> 
 			<image type="full">references/web/full-ufb.jpg</image> 
  
@@ -71,9 +71,8 @@
 	</category> 
  
 	<category> 
-		<title><![CDATA[<span class="c-white">Print</span>works]]></title> 
-		<name>Printworks</name>
-		
+		<name><![CDATA[<span class="c-white">Print</span>works]]></name> 
+		<title>Print</title>
 		
 		<reference added="2010-08-03" id="fitparty"> 
 			<image type="references">references/print/small-fitparty.png</image> 
@@ -111,8 +110,8 @@
 	</category> 
 	
 	<category> 
-		<title><![CDATA[<span class="c-white">Other</span>graphics]]></title>
-		<name>Othergraphics</name>
+		<name><![CDATA[<span class="c-white">Other</span>graphics]]></name> 
+		<title>Other</title>
 		
 		<reference added="2010-08-03" id="sk-baw"> 
 			<image type="references">references/other/small-skbaw.png</image> 
