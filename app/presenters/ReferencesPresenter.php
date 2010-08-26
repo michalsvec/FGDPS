@@ -53,9 +53,7 @@ class ReferencesPresenter extends BasePresenter
 	 */
 	public function renderDefault()
 	{
-
 		$this->template->references = $this->model->findByCategory($this->category);
-
 	}
 
 

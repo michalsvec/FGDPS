@@ -48,7 +48,7 @@ class ReferencesModel extends Object
 		$ref['name'] = (string) $item->name;
 		$ref['description'] = (string) $item->description;
 		foreach($item->image as $image) {
-			$ref['image_'.(string) $image->attributes()->type] = (string) $image;
+			$ref['image_'.(string) $image->attributes()->type][] = (string) $image;
 		}
 
 		return $ref;
@@ -109,12 +109,10 @@ class ReferencesModel extends Object
 		$references = array();
 		$category = $this->xml->xpath('//category[title="'.$category.'"]');
 
-
 		foreach($category[0]->reference as $reference) {
-		
-			$references[(string) $reference->attributes()->added] = $this->referenceXMLToArr($category[0], $reference);
+			$references[(string) $reference->attributes()->added][] = $this->referenceXMLToArr($category[0], $reference);
 		}
-		
+
 		return $references;
 	}
 

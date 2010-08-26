@@ -48,6 +48,10 @@ $(document).ready(function () {
 	});
 	
 	$('.colorbox').colorbox();
+	
+	
+	$('.line.line2:last ').hide();
+	
 });
 
 /* prida hover nad vybrany selektor */

@@ -15,13 +15,30 @@
 
 <div class="line line2">&nbsp;</div>
 
-{foreach $references as $reference}
+{* one date - more references - 2 foreaches*}
+{foreach $references as $date}
+{foreach $date as $reference}
 <div class="content reference">
 	<div class="thumb fl">
-		<a href="{$basePath}/files/{!$reference['image_full']}" class="colorbox bwswitch">
-			<img src="{$basePath}/files/{$reference['image_references']}" title="{!$reference['name']}" style="display: none;" class="color" />
-			<img src="{$basePath}/img.php?file={$reference['image_references']}" title="{!$reference['name']}" class="bw" />
+	{* prints link to the first photo and next links hidden - it will allow to switch colorobox to other photos *}
+	{foreach $reference['image_full'] as $k=>$full}
+		{if $k==0}	{* first photo *}
+		<a href="{$basePath}/files/{!$full}" class="bwswitch" rel="{$reference['id']}">
+			<img src="{$basePath}/files/{$reference['image_references'][0]}" title="{!$reference['name']}" style="display: none;" class="color" />
+			<img src="{$basePath}/img.php?file={$reference['image_references'][0]}" title="{!$reference['name']}" class="bw" />
 		</a>
+		{else}
+		<a href="{$basePath}/files/{!$full}" rel="{$reference['id']}" style="display:none">&nbsp;</a>
+		{/if}
+	{/foreach}
+	
+	<script>
+		$(document).ready(function(){
+			$("a[rel='{!$reference['id']}']").colorbox();
+		});
+	</script>
+
+
 	</div>
 	<div class="info fl">
 		<p class="text c-white">{!$reference['name']},<br />{!$reference['description']}</p>
@@ -29,7 +46,8 @@
 	</div>
 	<br class="cb">
 </div>
-<div n:if="!$iterator->last" class="line line2">&nbsp;</div>
+<div class="line line2">&nbsp;</div> 
+{/foreach}
 {/foreach}
 
 <div class="content">
@@ -47,7 +65,7 @@
 	<br class="cb"> 
 	-->
 	
-	<img src="{$basePath}/img/feathers.png" id="feathers">
-</div>
+<!--	<img src="{$basePath}/img/feathers.png" id="feathers"> -->
+	</div>
 
 {/block}
