@@ -24,8 +24,8 @@
 	{foreach $reference['image_full'] as $k=>$full}
 		{if $k==0}	{* first photo *}
 		<a href="{$basePath}/files/{!$full}" class="bwswitch" rel="{$reference['id']}">
-			<img src="{$basePath}/files/{$reference['image_references'][0]}" title="{!$reference['name']}" style="display: none;" class="color" />
-			<img src="{$basePath}/img.php?file={$reference['image_references'][0]}" title="{!$reference['name']}" class="bw" />
+			<img src="{$basePath}/files/{$reference['image_references'][0]}" title="{!$reference['name']}" style="display: none;" class="color shadow" />
+			<img src="{$basePath}/img.php?file={$reference['image_references'][0]}" title="{!$reference['name']}" class="bw shadow" />
 		</a>
 		{else}
 		<a href="{$basePath}/files/{!$full}" rel="{$reference['id']}" style="display:none">&nbsp;</a>
@@ -51,6 +51,7 @@
 {/foreach}
 
 <div class="content">
+	{control vp}
 	<!-- 
 	<div class="pager">
 		<ul>

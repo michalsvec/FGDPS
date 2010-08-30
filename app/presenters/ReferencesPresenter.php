@@ -53,13 +53,19 @@ class ReferencesPresenter extends BasePresenter
 	 */
 	public function renderDefault()
 	{
-		$this->template->references = $this->model->findByCategory($this->category);
+
+		$vp = new VisualPaginator($this, 'vp');
+		$paginator = $vp->getPaginator();
+		$paginator->itemsPerPage = 5;
+		$paginator->itemCount = $this->model->getCategoryCount($this->category);
+		
+		$this->template->references = $this->model->findByCategory($this->category, $paginator->offset, $paginator->itemsPerPage);
 	}
 
 
 
 	/**
-	 * unused - there wont be full view
+	 * unused - there won't be full view
 	 */
 	public function renderView($id) {
 

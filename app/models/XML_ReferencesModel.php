@@ -105,15 +105,27 @@ class ReferencesModel extends Object
 	 *	@param string category id
 	 *	@return array reference list
 	 */
-	public function findByCategory($category) {
+	public function findByCategory($category, $from = 0, $count) {
 		$references = array();
-		$category = $this->xml->xpath('//category[title="'.$category.'"]');
+		$category = $this->xml->xpath('//category[title="'.$category.'"] /reference');
 
-		foreach($category[0]->reference as $reference) {
+		foreach(array_slice($category, $from, $count) as $reference) {
 			$references[(string) $reference->attributes()->added][] = $this->referenceXMLToArr($category[0], $reference);
 		}
 
 		return $references;
+	}
+
+
+
+	/**
+	 *	Returns the item count in category
+	 *
+	 *	@param  string category name
+	 *	@return int    return items count
+	 */
+	public function getCategoryCount($category) {
+		return count($this->xml->xpath('//category[title="'.$category.'"] /reference'));
 	}
 
 
