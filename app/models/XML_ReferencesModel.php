@@ -107,9 +107,11 @@ class ReferencesModel extends Object
 	 */
 	public function findByCategory($category, $from = 0, $count) {
 		$references = array();
-		$category = $this->xml->xpath('//category[title="'.$category.'"] /reference');
+		$category = $this->xml->xpath('//category[title="'.$category.'"]');
 
-		foreach(array_slice($category, $from, $count) as $reference) {
+
+
+		foreach(array_slice($category[0]->xpath('//reference'), $from, $count) as $reference) {
 			$references[(string) $reference->attributes()->added][] = $this->referenceXMLToArr($category[0], $reference);
 		}
 

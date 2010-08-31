@@ -3,10 +3,14 @@ $(document).ready(function () {
 	/* switch logo image on hover */
 	$('#logo').hover(
 		function () {
-			$('a img', this).attr('src', 'img/mc-logo-hover.png');
+			$('a img', this).attr('src', 
+				$('a img', this).attr('src').replace('mc-logo', 'mc-logo-hover')
+			);
 		},
 		function () {
-			$('a img', this).attr('src', 'img/mc-logo.png');
+			$('a img', this).attr('src', 
+				$('a img', this).attr('src').replace('mc-logo-hover', 'mc-logo')
+			);
 		}
 	);
 
@@ -38,8 +42,11 @@ $(document).ready(function () {
 	set_ul_width('.pager ul');
 
 
-	$('.contact input,.contact textarea').click(function () {
-		$(this).val('');
+	$('#frm-contactForm input,#frm-contactForm textarea').click(function () {
+		if(!$(this).hasClass('clicked') && ($(this).attr('type') != 'submit')) {
+			$(this).val('');
+			$(this).addClass('clicked');
+		}
 	});
 	
 	$(".lava").lavaLamp({
@@ -112,3 +119,22 @@ function set_ul_width(selector) {
     }
   }
 })(jQuery)
+
+
+jQuery.fn.fadeIn = function(speed, callback) { 
+    return this.animate({opacity: 'show'}, speed, function() { 
+        if (jQuery.browser.msie)  
+            this.style.removeAttribute('filter');  
+        if (jQuery.isFunction(callback)) 
+            callback();  
+    }); 
+}; 
+ 
+jQuery.fn.fadeOut = function(speed, callback) { 
+    return this.animate({opacity: 'hide'}, speed, function() { 
+        if (jQuery.browser.msie)  
+            this.style.removeAttribute('filter');  
+        if (jQuery.isFunction(callback)) 
+            callback();  
+    }); 
+}; 

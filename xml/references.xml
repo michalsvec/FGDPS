@@ -58,7 +58,7 @@
 			<image type="full">references/web/full-zelenydom.jpg</image> 
  
 			<name><![CDATA[Zeleny dom]]></name> 
-			<description><![CDATA[Teplate]]></description> 
+			<description><![CDATA[Template]]></description> 
 		</reference> 
 			
 		<reference added="2010-08-02" id="blitz"> 
@@ -66,7 +66,7 @@
 			<image type="full">references/web/full-blitz.jpg</image> 
  
 			<name><![CDATA[Zeleny dom]]></name> 
-			<description><![CDATA[Teplate]]></description> 
+			<description><![CDATA[Template]]></description> 
 		</reference> 
 	</category> 
  

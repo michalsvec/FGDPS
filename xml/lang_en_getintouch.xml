@@ -25,24 +25,20 @@
 
 	<item str="Current location">Current location</item>
 	
-	<item str="Marian Cepa - designer"><![CDATA[<span class="c-dark">Marián Čepa</span> - designer]]></item>
+	<item str="Marian Cepa - designer"><![CDATA[<span class="c-dark">Marián Ćepa</span> - designer]]></item>
 	
 	<item str="Current status">Current status</item>
 	
 	<item str="Partners and friends"><![CDATA[Partners <span class="c-dark">&amp; Friends</span>]]></item>
 	
 	<item str="links-left"><![CDATA[
-		<span class="c-dark">Your Ideas</span> - lorem ipsum dolor [yourideas.hu]<br />
-		<span class="c-dark">Misa Svec</span> - lorem ipsum dolor [yoursite.cz]<br />
-		<span class="c-dark">Martin Kačmar</span> - lorem ipsum dolor [kacmar.sk]<br />
-		<span class="c-dark">Roman Sládeček</span> - infoweb [romansladecek.com]<br />
+		<span class="c-dark">Your Ideas</span> - webhosting service [<a href="http://your-ideas.eu/" target="_blank">your-ideas.eu</a>]<br /> 
+		<span class="c-dark">Michal Švec</span> - lorem ipsum dolor [<a href="http://michalsvec.cz/" target="_blank">michalsvec.cz</a>]<br />
 		]]></item>
 	
 	<item str="links-right"><![CDATA[
-		<span class="c-dark">Your Ideas</span> - lorem ipsum dolor [yourideas.hu]<br />
-		<span class="c-dark">Misa Svec</span> - lorem ipsum dolor [yoursite.cz]<br />
-		<span class="c-dark">Martin Kačmar</span> - lorem ipsum dolor [kacmar.sk]<br />
-		<span class="c-dark">Roman Sládeček</span> - infoweb [romansladecek.com]<br />
+		<span class="c-dark">Martin Kačmar</span> - programmer & webdesigner [<a href="http://kacmar.sk/" target="_blank">kacmar.sk</a>]<br /> 
+		<span class="c-dark">Roman Sládeček</span> - infoweb [<a href="http://romansladecek.com/" target="_blank">romansladecek.com</a>]<br />
 		]]></item>
 	
 	<item str="status">Free for hire</item>

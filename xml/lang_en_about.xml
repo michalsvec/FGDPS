@@ -5,7 +5,7 @@
 	<item str="top_heading"><![CDATA[Hi <span class="c-dark">there !</span>]]></item>
 
 	<item str="top_text"><![CDATA[<p>Welcome to my online portfolio. My name is <span class="c-orange">Marián Čepa</span> (as you've probably already guessed). I'm 19 years old <span class="c-dark">graphic designer</span> from Slovakia. I've fallen in love with colors and curves about 3 years ago.</p>
-		<p>I'm more than <span class="c-dark">2in1!</span> Fresh and modern webdesign? Animated banner? Creative poster or flyer? Cool t-shirts? <span class="c-orange">Here we go!</span> <span class="c-grey">I'm available for freelancing!</span></p>]]></item>
+		<p>I'm more than <span class="c-dark">2in1!</span> Fresh and modern webdesign? Animated banner? Creative poster or flyer? Cool t-shirts? <span class="c-orange">Here we go!</span> <a class="c-grey" href="cz/getintouch/">I'm available for freelancing!</a></p>]]></item>
 
 	<item str="biography_heading"><![CDATA[My <span class="c-dark">biography</span>]]></item>
 
