@@ -7,7 +7,7 @@
 	
 	<ul class="submenu lava">
 		{foreach $submenuItems as $id=>$value}
-		<li {if isset($value['current'])}class="current"{/if}><a href="{plink References:category, 'id' => $id}">{!$value['name']}</a></li>
+		<li {if isset($value['current'])}class="current"{/if}><a href="{plink References:category, 'id' => $id, 'lang' => $lang}">{!$value['name']}</a></li>
 		{/foreach}
 	</ul>
 	<br class="cb">

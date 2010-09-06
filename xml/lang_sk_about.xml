@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<strings>
+	<item str="About me"><![CDATA[O mne]]></item>
+
+	<item str="top_heading"><![CDATA[<span class="c-dark">Ahoj!</span>]]></item>
+
+	<item str="top_text"><![CDATA[<p>Vítam Vás na mojom online portfóliu! Moje meno je <span class="c-orange">Marián Čepa</span> (ako ste už pravdepodobne zistili) a som mladý, 19 ročný <span class="c-dark">grafik</span> zo Slovenska. Dokonalá symbióza estetického dizajnu, príjemných farieb a elegancie je u mňa na prvom mieste.</p>
+		<p>Tvorbe grafiky sa venujem už vyše <span class="c-dark">4</span> rokov. Potrebujete moderný webdizajn? Animovaný baner? Nápaditý plagát či leták? Alebo trendy tričká? <span class="c-orange">Poďme nato!</span> <a class="c-grey" href="/sk/getintouch/">Som pripravený na spoluprácu!</a></p>]]></item>
+
+	<item str="biography_heading"><![CDATA[Môj <span class="c-dark">životopis</span>]]></item>
+
+	<item str="biography_2009"><![CDATA[Po ukončení gymnázia v Stropkove <span class="c-grey s-smaller">(SK)</span> som začal na internete vystupovať pod prezývkou <span class="c-dark">xmayo</span> a po zhruba ročných skúsenostiach prichádzam so svojím vlastným portfóliom.]]></item>
+
+	<item str="biography_2010"><![CDATA[Momentálne som študentom <span class="c-dark">Informačných technológií</span> na Brnenskej univerzite VUT <span class="c-grey s-smaller">(CZ)</span>.]]></item>
+
+	<item str="interests"><![CDATA[Vo voľnom čase sa rád venujem akýmkoľvek športom, hlavne však <span class="c-dark">futbalu</span>. Okrem toho milujem svoju akustickú <span class="c-dark">gitaru</span>, <span class="c-dark">fotografovanie</span> a rád si vypočujem dobrú <span class="c-dark">hudbu</span>. Som priaznivcom čínskej kultúry - <span class="c-dark">tao</span>izmus, čaj a <span class="c-dark">Wing Tsun</span>.]]></item>
+
+	<item str="latest works"><![CDATA[Posledné <span class="c-dark">projekty</span>]]></item>
+
+	<item str="see all my works"><![CDATA[Všetky moje práce &gt;]]></item>
+</strings>

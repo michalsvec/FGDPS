@@ -65,8 +65,8 @@
 			<image type="references">references/web/small-blitz.png</image> 
 			<image type="full">references/web/full-blitz.jpg</image> 
  
-			<name><![CDATA[Zeleny dom]]></name> 
-			<description><![CDATA[Template]]></description> 
+			<name><![CDATA[Blitz.sk]]></name> 
+			<description><![CDATA[Gamehosting]]></description> 
 		</reference> 
 	</category> 
  

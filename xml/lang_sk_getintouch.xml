@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translate>
+	<item str="Get in touch title">Kontakt</item>
+	<item str="Get in touch"><![CDATA[Kontaktujte <span class="c-dark">ma!</span>]]></item>
+	
+	<item str="Form intro"><![CDATA[<p>Neváhajte ma kontaktovať. Zanechajte odkaz, ak chcete <span class="c-dark">spolupracovať</span> alebo ak len proste chcete pozdraviť, a ja sa Vám ozvem čo najskôr.</p>]]></item>
+	
+	<item str="Your name">Vaše meno (vyžadované)</item>
+	
+	<item str="Please, enter your name!">Prosím, zadajte Vaše meno!</item>
+
+	<item str="Your e-mail address (required)">Váš e-mail (vyžadované)</item>
+
+	<item str="Invalid e-mail address!">Neplatná e-mailová adresa!</item>
+
+	<item str="Subject">Predmet</item>
+	
+	<item str="Please, enter some text!">Prosím, zadajte text!</item>
+
+	<item str="Anything to say?">Vaša správa (vyžadované)</item>
+	
+	<item str="SEND MESSAGE">ODOSLAŤ SPRÁVU</item>
+	
+	<item str="My contact details">Moje kontaktné údaje</item>
+
+	<item str="Current location">Aktuálne pôsobisko</item>
+	
+	<item str="Marian Cepa - designer"><![CDATA[<span class="c-dark">Marián Čepa</span> - dizajnér]]></item>
+	
+	<item str="Current status">Súčasný stav</item>
+	
+	<item str="Partners and friends"><![CDATA[Priatelia <span class="c-dark">&amp; Partneri</span>]]></item>
+	
+	<item str="links-left"><![CDATA[
+		<span class="c-dark">Your Ideas</span> - webhosting [<a href="http://your-ideas.eu/" target="_blank">your-ideas.eu</a>]<br /> 
+		<span class="c-dark">Michal Švec</span> - web geek [<a href="http://michalsvec.cz/" target="_blank">michalsvec.cz</a>]<br />
+		]]></item>
+	
+	<item str="links-right"><![CDATA[
+		<span class="c-dark">Martin Kačmar</span> - programátor & webdizajnér [<a href="http://kacmar.sk/" target="_blank">kacmar.sk</a>]<br /> 
+		<span class="c-dark">Roman Sládeček</span> - infoweb [<a href="http://romansladecek.com/" target="_blank">romansladecek.com</a>]<br />
+		]]></item>
+	
+	<item str="status">Dostupný</item>
+	
+</translate>

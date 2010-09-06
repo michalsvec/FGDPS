@@ -39,7 +39,7 @@
 			<h2>{!_"latest works"}</h2>
 			<div id="works" class="works border-bottom">
 				{foreach $references as $reference}
-				<a href="{plink References:category, 'id'=>strip_tags($reference['category_title'])}" class="bwswitch{if $iterator->last} last{/if}">
+				<a href="{plink References:category, 'id'=>strip_tags($reference['category_title']), 'lang' => $lang}" class="bwswitch{if $iterator->last} last{/if}">
 					<img src="{$basePath}/files/{$reference['image_about'][0]}" title="{!$reference['name']}" style="display: none;" class="color" />
 					<img src="{$basePath}/img.php?file={$reference['image_about'][0]}" title="{!$reference['name']}" class="bw" />
 				</a>
@@ -47,7 +47,7 @@
 				<br class="cb">
 			</div>
 			<p class="border-bottom tac">
-				<a href="{plink References:}" class="c-grey">{!_"see all my works"}</a>
+				<a href="{plink References:, 'lang' => $lang}" class="c-grey">{!_"see all my works"}</a>
 			</p>
 		</div>
 		<br class="cb">

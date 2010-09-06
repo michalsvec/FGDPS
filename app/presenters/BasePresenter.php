@@ -15,13 +15,15 @@ abstract class BasePresenter extends Presenter
 	public $oldLayoutMode = FALSE;
 
 	/** @persitent */
-	public $lang = 'en';
+	public $lang;
 
 	/** @vat SimpleXML configuration file */
 	private $config;
 
 	protected function startup() {
 		parent::startup();
+
+		$this->lang = $this->getParam('lang');
 
 		$this->config = simplexml_load_file(XML_DIR.'/config.xml');
 	}
@@ -38,10 +40,7 @@ abstract class BasePresenter extends Presenter
 		);
 
 		$this->template->menuItems[$this->getName().':']['current'] = true;
-
 		$this->template->lang = $this->lang;
-
-
 	}
 
 }

@@ -42,14 +42,14 @@
 <!-- - - - - - - absolute positioned elements - - - - - - - - - - - - - -->
 <div class="content">
 	<div id="logo">
-		<a href="{$basePath}"><img src="{$basePath}/img/mc-logo.png" alt="mc-logo.png" title="MarianCepa.com"></a>
+		<a href="{plink About:, 'lang' => $lang}"><img src="{$basePath}/img/mc-logo.png" alt="mc-logo.png" title="MarianCepa.com"></a>
 	</div>
 
 	<div id="menu">
 	
 		<ul class="menu lava">
 		{foreach $menuItems as $id => $item}
-			<li {if isset($item['current'])}class="current"{/if}><a href="{plink $id}">{$item['name']}</a></li>
+			<li {if isset($item['current'])}class="current"{/if}><a href="{plink $id, 'lang' => $lang}">{$item['name']}</a></li>
 		{/foreach}
 		</ul>
 	</div>
@@ -57,8 +57,11 @@
 	<div id="langbox">
 		<ul class="lang">
 			<li class="en"><a href="{link this 'lang'=>'en'}"><img src="{$basePath}/img/flag-en.gif" alt="flag-en" title="English"></a></li>
+
 			<li class="sk"><a href="{link this 'lang'=>'sk'}"><img src="{$basePath}/img/flag-sk.gif" alt="flag-sk" title="Slovensky"></a></li>
-		</ul>
+<!--			<li class="sk"><a href="#"><img src="{$basePath}/img/flag-sk.gif" alt="flag-sk" title="Slovensky (momentalne nedostupny)"></a></li> -->
+
+    		</ul>
 	</div>
 
 	<div id="flower">
